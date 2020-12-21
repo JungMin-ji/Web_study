@@ -1,0 +1,31 @@
+@charset "uft-8"
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+/*reset*/
+*{padding: 0; margin: 0;}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td 
+{padding: 0; margin: 0;}
+
+a{color: inherit; text-decoration: none;}
+li{list-style: none;}
+address, em, i{font-style: none;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;}
+a:hover{text-decoration: none; color: inherit;}
+
+/*layout*/
+body{font-family: 'Roboto', sans-serif; font-size: 14px; background: #eee;}
+.wrap{width: 100%; overflow: hidden;}
+
+/*header*/
+header{width: 100%; position: fixed; z-index: 100; background: black;}
+.innerHeader{padding: 0 60px; height: 60px; transition: all 0.3s;}
+.innerHeader.title{width: 200px; height: 36px; float: left; margin-top: 28px; transition: all 0.3s; color: white; position: relative;}
+
+/*gnb*/
+.gnb{position: absolute; left: 50%; transform: translateX(-30%); width: 800px;}
+.gnb>li{float: left; width: 20%; height: 60px; line-height: 30px; position: relative; transition: all 0.3s;}
+.gnb>li>a{display: block; width: 100%; height: 100%; text-align: center; color: white; font-size: 18px; font-weight: 500;}
+.gnb ul.inner{width: 160px; background: #fff; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); padding: 10px 25px; line-height: 50px; box-sizing: border-box; opacity: 1;}
+.gnb ul.inner a{display: block; width: 100%; height: 100%; font-size: 17px;}
+.gnb ul.inner{display: none}
