@@ -1,6 +1,7 @@
 @charset "uft-8"
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /*reset*/
 *{padding: 0; margin: 0;}
@@ -16,11 +17,13 @@ a:hover{text-decoration: none; color: inherit;}
 /*layout*/
 body{font-family: 'Roboto', sans-serif; font-size: 14px; background: #eee;}
 .wrap{width: 100%; overflow: hidden;}
+.en {font-family: 'Bebas Neue'; cursive;}
+
 
 /*header*/
-header{width: 100%; position: fixed; z-index: 100; background: black;}
+header{width: 100%; position: fixed; z-index: 1000; background: black;}
 .innerHeader{padding: 0 60px; height: 36px; transition: all 0.3s;}
-.innerHeader .title{width: 200px; height: 36px; float: left; margin-top: 28px; transition: all 0.3s; color: white; position: relative; }
+.innerHeader .title{width: 200px; height: 36px; float: left; margin-top: 20px; transition: all 0.3s; color: white; position: relative; }
 
 /*gnb*/
 .gnb{position: absolute; left: 50%; transform: translateX(-30%); width: 800px;}
@@ -38,8 +41,23 @@ z-index: -1; left: 50%; top: -80px; transform: translateX(-50%); opacity: 0; tra
 .gnb ul.inner a:hover span:after, .gnb ul.inner a:focus span:after{width: 100%; padding-right: 10px;}
 
 
-/*fixHeader*/
+/*fixHeader(스크롤 시 헤더의 높이 줄어듦)*/
 header.on .innerHeader{height: 30px; transition: all 0.4s;}
-header.on .innerHeader .title{margin-top: 10px; transition: all 0.4s;}
-header.on .innerHeader .gnb > li{height: 46px; line-height: 30px; transition: all 0.4s;}
+header.on .innerHeader .title{margin-top: 14px; transition: all 0.4s;}
+header.on .innerHeader .gnb > li{height: 46px; line-height: 46px; transition: all 0.4s;}
 header.on .gnb ul.inner.on {top: 46px;}
+
+/*section.visual(이미지, 텍스트)*/
+.visual .slide li{position: relative; width: 100%; height: 870px; text-align: center; color: #fff;}
+.visual .slide li img{height: 100%; width: auto;}
+.visual .slide li .txt{position: absolute; width: 100%; top: 26%; font-size: 130px; line-height: 1; letter-spacing: 15px; }
+.visual .slide li a{display: inline-block; position: absolute; left: 50%; transform: translateX(-50%); bottom: 50%; font-size: 30px; letter-spacing:2px;}
+.visual .slide li a:after{content: ''; width: 70%; height: 2px; position: absolute; left: 50%; transform: translateX(-50%); bottom: -6px; background: #f8b922; transition: all 0.3s;}
+.visual .slide li a:hover:after, .visual .slide li a:focus:after{width: 100%; transition: all 0.3s;}
+
+/*mask*/
+.visual .slide li .mask{display: block; position: absolute; top: 0; width: 1px; height: 100%; background: rgba(255, 255, 255, 0.36);}
+.visual .slide li .mask.a{left: 0%;}
+.visual .slide li .mask.b{left: 25%;}
+.visual .slide li .mask.c{left: 50%;}
+.visual .slide li .mask.d{left: 75%;}

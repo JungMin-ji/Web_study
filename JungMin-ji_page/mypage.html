@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head lang="ko">
-	<title>jung-minji's page</title>
+	<title>jung min-ji's page</title>
 	<link rel="stylesheet" type="text/css" href="mypage.css">
+	  <link rel="stylesheet" type="text/css" href="slick.css">
 	<script src="jquery-3.3.1.min.js"></script>
 	<script src="mypage.js"></script>
+	<script src="splitting.min.js"></script>
+    <script src="slick.min.js"></script>
 </head>
 <body>
 	<div class="wrap">
@@ -12,7 +15,7 @@
 	<header>
 	   <div class="innerHeader">
 
-	        <h1 class="title">JUNG-MINJI</h1>
+	        <h1 class="title">JUNG MIN-JI</h1>
 	        <ul class="gnb">
 	            <li><a href="#">About Me</a>
 	                <ul class="inner">
@@ -33,10 +36,38 @@
 
 		            </ul>
 		        </li>
-
 	   		</ul>
 		</div>
    </header>
+
+   <!-- visual(contents 상단 코딩 이미지&이름) -->
+   <section class="visual">
+   	<ul class="slide">
+   		<li>
+   			<img src="img/coding1.jpg" alt="">
+   			<div class="txt en">
+   				<div data-splitting>JUNG MIN-JI</div>
+   			</div>
+   			<a href="#" class="en">COMPUTER SCIENCE</a>
+   			<span class="mask a"></span>
+   			<span class="mask b"></span>
+   			<span class="mask c"></span>
+   			<span class="mask d"></span>
+   		</li>
+
+   		<li>
+   			<img src="img/coding2.jpg" alt="">
+   			<div class="txt en">
+   				<div data-splitting>JUNG MIN-JI</div>
+   			</div>
+   			<a href="#" class="en">COMPUTER SCIENCE</a>
+   			<span class="mask a"></span>
+   			<span class="mask b"></span>
+   			<span class="mask c"></span>
+   			<span class="mask d"></span>
+   		</li>
+   	</ul>
+   </section>
 	</div>
 </body>
 </html>
