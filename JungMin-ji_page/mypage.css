@@ -61,3 +61,62 @@ header.on .gnb ul.inner.on {top: 46px;}
 .visual .slide li .mask.b{left: 25%;}
 .visual .slide li .mask.c{left: 50%;}
 .visual .slide li .mask.d{left: 75%;}
+
+
+/*이미지 넘어가는 화살표*/
+.slick-arrow{position: absolute; top: 40%; transform: translateY(-50%); z-index: 1; background: none; width: 110px; height: 52px; border: none;
+text-align: right; text-transform: uppercase; font-size: 20px; color: #fff; letter-spacing: 2px; font-family: 'Bebas Neue', cursive;}
+.slick-next{text-align: left; right: 0;}
+/*밑줄*/
+.slick-arrow:after{content: ''; position: absolute; left: 0; top: 80%; transform: translateY(-50%); width: 90%; height: 2px;
+background: #fff;}	
+.slick-next:after{left: 45%;}
+
+/*마우스 올렸을 때*/
+/*버튼*/
+.slick-arrow:before{content: ''; width: 0%; height: 100%; background:#fff; position: absolute; top: 0; left: 0;
+transition: all 0.4s; z-index: -1;}
+.slick-next::before{left: 0px;}
+/*밑줄*/
+.slick-arrow:hover{color: #000; transition: all 0.3s; cursor: pointer;}
+.slick-arrow:hover:after{background: #f8b922;}
+.slick-arrow:hover:before{width: 112%;}
+
+/*이미지 슬라이더의 인디케이터*/
+.visual .slide .slick-dots{position: absolute; bottom: 40%; left: 50%; transform: translateX(-50%); z-index: 100;}
+.visual .slide .slick-dots li{width: 2px; height: 15px; float: left; margin: 0 10px;}
+.visual .slide .slick-dots li button{width: 100%; height: 100%; background: #fff; border:none; text-indent: -9999px;}
+/*text-intent : 들여쓰기 => 들여쓰기를 마이너스값을 줘서 텍스트가 버튼에 안보기게 하기 */
+.visual .slide .slick-dots:hover, .visual .slide .slick-dots button:hover{cursor: pointer;}
+/*활성화된 슬라이드 인디케이터 크기와 색상 변경*/
+.visual .slide .slick-dots li.slick-active button{background: #f8b922; height: 18px; margin-top: -12px; transition: height 0.3s;}
+/*슬라이드 애니메이션*/
+
+
+/*텍스트 애니메이션*/
+
+.visual .splitting {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+	
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
