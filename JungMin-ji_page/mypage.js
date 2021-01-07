@@ -45,7 +45,7 @@ $(function(){
 		dots:true,		// 현재 이미지 위치 학인하는 dot 
 		autoplay:true,	// 이미지 자동으로 넘어감
 		fade:true,		// 페이드인 효과
-		autoplaySpeed:3000,		// 이미지 넘어가는 시간(3s)
+		autoplaySpeed:6000,		// 이미지 넘어가는 시간(3s)
 		pauseOnHover:false,		// 호버시 멈추는 것을 해제
 		pauseOnFocus:false
 

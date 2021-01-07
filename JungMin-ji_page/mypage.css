@@ -21,15 +21,15 @@ body{font-family: 'Roboto', sans-serif; font-size: 14px; background: #eee;}
 
 
 /*header*/
-header{width: 100%; position: fixed; z-index: 1000; background: black;}
+header{width: 100%; position: fixed; z-index: 100; background: black;}
 .innerHeader{padding: 0 60px; height: 36px; transition: all 0.3s;}
 .innerHeader .title{width: 200px; height: 36px; float: left; margin-top: 20px; transition: all 0.3s; color: white; position: relative; }
 
 /*gnb*/
 .gnb{position: absolute; left: 50%; transform: translateX(-30%); width: 800px;}
-.gnb > li{float: left; width: 20%; height: 64px; line-height: 60px; position: relative; transition: all 0.3s;}
+.gnb > li{float: left; width: 20%; height: 60px; line-height: 60px; position: relative; transition: all 0.3s;}
 .gnb > li > a{display: block; width: 100%; height: 100%; text-align: center; color: #fff; font-size: 18px; font-weight: 500; }
-.gnb > li > a:before{position:absolute; content: ''; background: #f8b922; width: 100%; height: 100%; 
+.gnb > li > a:before{position:absolute; content: ''; background: orange; width: 100%; height:100%; 
 z-index: -1; left: 50%; top: -80px; transform: translateX(-50%); opacity: 0; transition: all 0.3s;}
 .gnb ul.inner{width: 160px; background: #fff; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
 	padding: 10px 25px; line-height: 50px; box-sizing: border-box; opacity: 0; transition: opacity 0.5s}
@@ -37,12 +37,13 @@ z-index: -1; left: 50%; top: -80px; transform: translateX(-50%); opacity: 0; tra
 .gnb ul.inner.on{opacity: 1; line-height: 50px;}
 .gnb ul.inner a{display: block; width: 100%; height: 100%;}
 .gnb ul.inner a span{display: inline-block; position: relative;}
-.gnb ul.inner a span:after{content: ''; width: 0; height: 2px; background: #f8b922; position: absolute; left: 0; bottom: 8px; transition: all 0.3s;}
+.gnb ul.inner a span:after{content: ''; width: 0; height: 2px; background: orange; position: absolute; left: 0; bottom: 8px; 
+transition: all 0.3s; opacity: 1;}
 .gnb ul.inner a:hover span:after, .gnb ul.inner a:focus span:after{width: 100%; padding-right: 10px;}
 
 
 /*fixHeader(스크롤 시 헤더의 높이 줄어듦)*/
-header.on .innerHeader{height: 30px; transition: all 0.4s;}
+header.on .innerHeader{height: 46px; transition: all 0.4s;}
 header.on .innerHeader .title{margin-top: 14px; transition: all 0.4s;}
 header.on .innerHeader .gnb > li{height: 46px; line-height: 46px; transition: all 0.4s;}
 header.on .gnb ul.inner.on {top: 46px;}
@@ -50,7 +51,7 @@ header.on .gnb ul.inner.on {top: 46px;}
 /*section.visual(이미지, 텍스트)*/
 .visual .slide li{position: relative; width: 100%; height: 870px; text-align: center; color: #fff;}
 .visual .slide li img{height: 100%; width: auto;}
-.visual .slide li .txt{position: absolute; width: 100%; top: 26%; font-size: 130px; line-height: 1; letter-spacing: 15px; }
+.visual .slide li .txt{position: absolute; width: 100%; top: 26%; font-size: 110px; line-height: 1; letter-spacing: 15px; }
 .visual .slide li a{display: inline-block; position: absolute; left: 50%; transform: translateX(-50%); bottom: 50%; font-size: 30px; letter-spacing:2px;}
 .visual .slide li a:after{content: ''; width: 70%; height: 2px; position: absolute; left: 50%; transform: translateX(-50%); bottom: -6px; background: #f8b922; transition: all 0.3s;}
 .visual .slide li a:hover:after, .visual .slide li a:focus:after{width: 100%; transition: all 0.3s;}
@@ -68,17 +69,17 @@ header.on .gnb ul.inner.on {top: 46px;}
 text-align: right; text-transform: uppercase; font-size: 20px; color: #fff; letter-spacing: 2px; font-family: 'Bebas Neue', cursive;}
 .slick-next{text-align: left; right: 0;}
 /*밑줄*/
-.slick-arrow:after{content: ''; position: absolute; left: 0; top: 80%; transform: translateY(-50%); width: 90%; height: 2px;
+.slick-arrow:after{content: ''; position: absolute; left: 0; top: 80%; transform: translateY(-50%); width: 100%; height: 2px;
 background: #fff;}	
-.slick-next:after{left: 45%;}
+.slick-next:after{left: 0%; width: 100%;}
 
 /*마우스 올렸을 때*/
 /*버튼*/
-.slick-arrow:before{content: ''; width: 0%; height: 100%; background:#fff; position: absolute; top: 0; left: 0;
+/*.slick-arrow:before{content: ''; width: 0%; height: 100%; background:#fff; position: absolute; top: 0; left: 0;
 transition: all 0.4s; z-index: -1;}
-.slick-next::before{left: 0px;}
+.slick-next::before{left: 0px;}*/
 /*밑줄*/
-.slick-arrow:hover{color: #000; transition: all 0.3s; cursor: pointer;}
+.slick-arrow:hover{opacity:0.5; transition: all 0.3s; cursor: pointer;}
 .slick-arrow:hover:after{background: #f8b922;}
 .slick-arrow:hover:before{width: 112%;}
 
@@ -94,21 +95,18 @@ transition: all 0.4s; z-index: -1;}
 
 
 /*텍스트 애니메이션*/
-
 .visual .splitting {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+     overflow: hidden;
+     border-right: .10em solid orange;
+     white-space: nowrap;
+     margin: 0 auto;
+     letter-spacing: .15em;
+     animation: typing 2.5s steps(22, end), blink-caret .75s step-end;
 }
 
 /* The typing effect */
+
 @keyframes typing {
-	
   from { width: 0 }
   to { width: 100% }
 }
@@ -119,4 +117,9 @@ transition: all 0.4s; z-index: -1;}
   50% { border-color: orange }
 }
 
+/*#102b6a*/
 
+/*fotter*/
+footer{background: #191a1a; padding: 30px 20px; color: #666;}
+footer ul{margin-bottom: 10px; overflow: hidden; }
+footer ul li {float: left; margin-right: 20px;}
