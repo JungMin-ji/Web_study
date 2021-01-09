@@ -54,11 +54,15 @@ header.on .gnb ul.inner.on {top: 46px;}
 .project{margin-top: 10%; margin-left: 5%;}
 
 /*프로젝트 타이틀*/
-.project .explanation .title{margin-bottom: 20px; margin-left: 20px; font-size: 20px; background-color: red;}
+.project .explanation .title{margin-bottom: 20px; margin-left: 20px; font-size: 20px; margin-top: 110px;}
 .project .explanation li .title:before{content:'01'; font-weight: bold; color: #666; font-size: 30px; font-family: 'Bebas Neue', cursive; margin-right: 10px;}
+
+/*프로젝트 타이틀 앞 숫자*/
 .project .explanation li:nth-child(2) .title:before{content:'02';}
 .project .explanation li:nth-child(3) .title:before{content:'03';}  
 .project .explanation li:nth-child(4) .title:before{content:'04';}  
+.project .explanation li:nth-child(5) .title:before{content:'05';}  
+
 
 /*유튜브 영상*/
 .project .explanation .videoBox{float: left;}
@@ -78,14 +82,35 @@ header.on .gnb ul.inner.on {top: 46px;}
 .project .videoBox .mask span:hover:before {opacity: 1;}
 .project .videoBox .mask span:hover:after{transform: translate(-50%,-50%) scale(1); }*/
 
+/*프로젝트 소제목들*/
+.project .explanation .subtitle{margin-top: 20px; font-size: 17px;}
 
 /*기술 스택, 소개*/
-/*.project .explanation .subtitle{margin-top: 20px; font-size: 17px;}
-.project .explanation .introduceProject{display: inline-block; float: left; margin-left: 60px;}
-.project .explanation .introduceProject .introduce2{margin-top: 30px;}*/
+.project .explanation .introduceProject{margin-left: 60px; display: inline-block; width: 55%;}
+.project .explanation .introduceProject .introduce2{margin-top: 30px;}  /*기술 스택, 소개 사이 간격 다른 소제목 간격보다 더 넓게 */
+
+/*기술 스택 블럭화*/
+.project .explanation .introduceProject .techStack{margin-top: 10px;}
+.project .explanation .introduceProject .techStack span{margin-right: 10px; background-color:#FF9900; padding: 4px; border-radius: 6px;}
+.project .explanation .introduceProject .techStack span:nth-child(2){background-color:#3333FF;}
+.project .explanation .introduceProject .techStack span:nth-child(3){background-color:#CCCCCC;}
+
+/*프로젝트 구성(팀 or 개인)*/
+.project .explanation .introduceProject .configuration {background-color: rgba(225, 102, 100, 0.5);; padding: 4px; border-radius: 6px; margin-top: 10px; display: inline-block;} 
 
 
+/*프로젝트 전체 설명글*/
+.project .explanation .text{margin-top: 10px; line-height: 25px; width: 80%; text-align: justify} /*글이 꽉 차지 않게 넓이 줄여줌*/
+.project .explanation .introduceProject .text{ font-size: 15px; width: 100%;}  /*소개 부분만 글자 크게*/
 
+
+/*구현*/
+.project .explanation .implementationPart{clear: both; margin-top: 80px;}  /*clear:both 속성 : div가 아래로 글자가 줄바꿈 되기를 원할 때*/
+
+
+/*저장소 링크*/
+.project .explanation .storage .subtitle{float: left; margin-top: 34px;}
+.project .explanation .storage a{display: inline-block;  margin-top: 36px; margin-left: 20px; text-decoration: underline;}
 
 
 
@@ -99,6 +124,6 @@ header.on .gnb ul.inner.on {top: 46px;}
 
 
 /*fotter*/
-/*footer{background: #191a1a; padding: 30px 20px; color: #666;}
+footer{background: #191a1a; padding: 30px 20px; color: #666; margin-top: 100px;}
 footer ul{margin-bottom: 10px; overflow: hidden; }
-footer ul li {float: left; margin-right: 20px;}*/
+footer ul li {float: left; margin-right: 20px;}
