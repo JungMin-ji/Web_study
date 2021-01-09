@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 
 /*reset*/
 *{padding: 0; margin: 0;}
@@ -50,19 +50,55 @@ header.on .innerHeader .gnb > li{height: 46px; line-height: 46px; transition: al
 header.on .gnb ul.inner.on {top: 46px;}
 
 
+/*프로젝트 설명*/
+.project{margin-top: 10%; margin-left: 5%;}
 
-/*자기소개 contents*/
-.contents .introduce {margin-top: 10%; margin-left: 5%;}
-.contents .introduce .img{float: left; box-shadow: 0 8px 10px rgba(0, 0, 0, 0.25), 0 8px 4px rgba(0, 0, 0, 0.22);}
-.contents .introduce .text{display: inline-block; float: left; color: #555; background-color: rgba(75, 78, 85, 0.1); 
-  font-size: 18px;  height: 300px; letter-spacing: -1px; line-height: 38px; padding: 20px; 
-width: 700px; margin-left: 30px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.24); font-family: 'Lora', serif;}
+/*프로젝트 타이틀*/
+.project .explanation .title{margin-bottom: 20px; margin-left: 20px; font-size: 20px; background-color: red;}
+.project .explanation li .title:before{content:'01'; font-weight: bold; color: #666; font-size: 30px; font-family: 'Bebas Neue', cursive; margin-right: 10px;}
+.project .explanation li:nth-child(2) .title:before{content:'02';}
+.project .explanation li:nth-child(3) .title:before{content:'03';}  
+.project .explanation li:nth-child(4) .title:before{content:'04';}  
+
+/*유튜브 영상*/
+.project .explanation .videoBox{float: left;}
+/*.project .explanation .videoBox {position: relative; width: 400px; height: 300px; border-color: green;  float: left;}*/
+/*.project .explanation .videoBox iframe {position: absolute; display: none;}
+*//*.project .videoBox .mask{width: 100%; height: 100%; position: absolute;}
+.project .videoBox .mask span{display: block; width: 100%; height: 100%; position: relative;}
+.project .videoBox .mask span img{width: 100%; transition: all 1s;}*/
+
+
+/*영상 호버 효과*/
+/*.project .videoBox .mask:hover img{cursor: pointer; transform: scale(1.1); transition: all 0.3s}
+.project .videoBox .mask span:before {content: ''; width: 100%; height: 100%; background: rgba(3, 3, 3, 0.4); position:absolute; left: 0; top:0; opacity: 0; transition: all 0.3s; z-index: 1;}
+
+.project .videoBox .mask span:after {content: ''; width: 45px;height: 45px;border:1px solid #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%) scale(0);transition: all 0.4s; transition-delay: 0.15s; z-index: 2;}
+
+.project .videoBox .mask span:hover:before {opacity: 1;}
+.project .videoBox .mask span:hover:after{transform: translate(-50%,-50%) scale(1); }*/
+
+
+/*기술 스택, 소개*/
+/*.project .explanation .subtitle{margin-top: 20px; font-size: 17px;}
+.project .explanation .introduceProject{display: inline-block; float: left; margin-left: 60px;}
+.project .explanation .introduceProject .introduce2{margin-top: 30px;}*/
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 /*fotter*/
-/*footer{background: #191a1a; padding: 30px 20px; color: #666; bottom: 0; position: absolute;}
+/*footer{background: #191a1a; padding: 30px 20px; color: #666;}
 footer ul{margin-bottom: 10px; overflow: hidden; }
 footer ul li {float: left; margin-right: 20px;}*/

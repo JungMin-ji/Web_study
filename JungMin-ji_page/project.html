@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="ko">
+	<title>jung min-ji's page</title>
+	<link rel="stylesheet" type="text/css" href="css/project.css">
+   <link rel="stylesheet" type="text/css" href="css/slick.css">
+   <script src="js/jquery-3.3.1.min.js"></script>
+   <script src="js/splitting.min.js"></script>
+   <script src="js/slick.min.js"></script>
+	<script src="js/project.js"></script>
+
+</head>
+<body>
+	<div class="wrap">
+	<!-- header -->
+	<header>
+	   <div class="innerHeader">
+	        <h1 class="title"><a href="mypage.html">JUNG MIN-JI</a></h1>
+	        <ul class="gnb">
+	            <li><a href="#">About Me</a>
+	                <ul class="inner">
+	                    <li><a href="aboutMe.html"><span>about Me</span></a></li>
+	           	   	</ul>
+	       		 </li>
+		       
+		        <li><a href="#">Portfolio</a>
+		            <ul class="inner">
+		                <li><a href="#"><span>project</span></a></li>
+		                <li><a href="#"><span>contest</span></a></li>
+		            </ul>
+		        </li>
+ 
+		        <li><a href="#">Review</a>
+		            <ul class="inner">
+		                <li><a href="#"><span>about book</span></a></li>
+
+		            </ul>
+		        </li>
+	   		</ul>
+		</div>
+   </header>
+
+   <!-- visual(contents 상단 코딩 이미지&이름) -->
+   <section class="project">
+   	<ul class="explanation">
+         <div class="project2"></div>
+         <li>
+            <h1 class="title">Our score</h1>
+            <div class="videoBox" >
+               <iframe width="400" height="300" src="https://www.youtube.com/embed/CZpfv65pE2Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+               <!-- <p class="mask"><span><img src="img/video1.jpg" alt=""></span></p> -->
+            </div>
+            
+            <div class="introduceProject">
+               <div class="introduce1">
+                  <h1 class="subtitle">기술 스택</h1>
+                  <div class="techStack"><span id="stack">Python</span><span id="stack">PyQt</span></div>
+               </div>
+               
+               <div class="introduce2">
+                  <h1 class="subtitle">소개</h1> <span class="configuration">팀 프로젝트</span>
+                  <div class="text">주 사용자층을 학생, 교수님, 선생님, 입학 상담사등 친숙한 직업군을 타깃으로 설정했습니다. 이들은 모두 학생들의 성적을 다루는 일을 합니다. 따라서 학생들의 성적을 이용한 프로그램을 만들면 우리에게 가장 가까운 사람들에게 도움을 줄 것이라 생각하고 이 프로그램을 만들었습니다. 목적은 학생의 성적 분포를 한 눈에 보기 쉽게 하기 위해 만들었습니다. </div> 
+               </div>
+            </div>
+
+            <div class="implementationPart">
+               <h1 class="subtitle">구현</h1>
+                <div class="text">
+               점수 데이터를 처리하는 부분과 전체적인 UI 구성을 맡았습니다. 사용자가 점수를 입력하면 과목과 분반 별로 텍스트 파일에 저장했습니다. 사용자가 입력할 때 마다 텍스트 파일에 저장된 점수를 갱신했습니다. 또한, 저장된 점수 데이터를 기반으로 통계를 내어 평균과 분산을 계산했습니다.</div>
+            </div>
+
+            <div class="storage"><h1 class="subtitle">저장소 링크</h1><a href="https://github.com/JungMin-ji/SW2Project">https://github.com/JungMin-ji/SW2Project</a></div>
+         </li>
+
+   		<div class="project2">
+        <li>
+            <h1 class="title">Xycar를 이용한 자율주행</h1>
+            <div class="videoBox" >
+               <iframe width="400" height="300" src="https://www.youtube.com/embed/CZpfv65pE2Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+               <!-- <p class="mask"><span><img src="img/video1.jpg" alt=""></span></p> -->
+            </div>
+            
+            <div class="introduceProject">
+               <div class="introduce1">
+                  <h1 class="subtitle">기술 스택</h1>
+                  <div class="techStack"><span id="stack">Python</span><span id="stack">Ros</span><span id="stack">OpenCV</span></div>
+               </div>
+               
+               <div class="introduce2">
+                  <h1 class="subtitle">소개</h1> <span class="configuration">팀 프로젝트</span>
+                  <div class="text">Ros를 기반으로 카메라, 초음파 센서를 이용하여 차선을 인식하는 자율주행 알고리즘입니다.</div> 
+               </div>
+            </div>
+
+            <div class="implementationPart">
+               <h1 class="subtitle">구현</h1>
+                <div class="text">
+               팀원 다 같이 차선 인식 알고리즘을 구현했고, 신호등 감지 부분을 맡아 구현했습니다. 
+               차선 인식은 적절한 범위를 설정하여 canny와 mask를 이용해 노이즈를 최소화하여 차선의 위치를 파악합니다. 검출된 차선에서 일정한 간격을 유지하여 차가 차선을 이탈하지 않도록 합니다. 
+               빨간 원을 카메라가 인식하면 xycar를 멈추게 하고, 초록 원을 인식하면 다시 움직입니다. 카메라가 인식한 영역 중 중심부를 기준으로 BGR에서 R값에 threshold값을 주어 그 이상이라면 빨간색이라고 인식하여 속도롤 90으로 지정합니다. 마찬가지로 초록색도 검증합니다. 이때, 다른 팀원이 구현한 표지판을 인식해서 xycar가 멈추면 안되므로 맨 처음 G와 R값이 155이상일 때는 pass합니다. </div>
+            </div>
+
+            <div class="hardPoint">
+               <h1 class="subtitle">어려웠던 점</h1>
+                <div class="text">
+               임베디드 분야를 다뤄보며 힘든 점이 정말 많았습니다… 사소한 외부적인 환경의 변화에 민감하게 반응할 때 마다 알고리즘을 고쳐야 했고 디버깅하는 과정도 만만치 않았습니다. 특히 사소한 숫자의 변화로 방향이 달라지고 디버깅할 시간조차 주지 않고 달려 나가는 xycar로 인해 고생을 참 많이 했습니다.. 옆에서 같이 고생하는 팀원들이 있었기에 이 프로젝트를 잘 마무리할 수 있었습니다. 임베디드 분야에 도전해보며 많은 시행착오도 있었지만, 그 과정 속에서 오류를 극복하는 방법, 코드를 구현하기 전 여러 상황을 고려하여 설계해야 하는 과정을 거쳐야 한다는 점 등 많은 것을 배울 수 있었습니다. </div>
+            </div>
+
+            <div class="storage"><h1 class="subtitle">저장소 링크</h1><a href="https://github.com/jeongahn/AD-project">https://github.com/jeongahn/AD-project</a></div>
+            
+         </li>    
+         </div>
+
+   	</ul>
+   </section>
+
+<!--    <footer>
+   	<ul>
+   		<li>phone: 010-3066-2910</li>
+   		<li>email: mjjung@kookmin.ac</li>
+   	</ul>
+   	<p>COPYRIGHT 2020</p>
+   </footer> -->
+	</div>
+</body>
+</html>
