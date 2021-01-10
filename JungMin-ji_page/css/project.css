@@ -28,12 +28,16 @@ header{width: 100%; position: fixed; z-index: 100; background: black;}
 
 /*gnb*/
 .gnb{position: absolute; left: 50%; transform: translateX(-30%); width: 800px;}
-.gnb > li{float: left; width: 20%; height: 60px; line-height: 60px; position: relative; transition: all 0.3s;}
+.gnb > li{float: left; width: 20%; height: 56px; line-height: 60px; position: relative; transition: all 0.3s;} /*오랜지색 컨츠 높이*/
+
 .gnb > li > a{display: block; width: 100%; height: 100%; text-align: center; color: #fff; font-size: 18px; font-weight: 500; }
 .gnb > li > a:before{position:absolute; content: ''; background: orange; width: 100%; height:100%; 
 z-index: -1; left: 50%; top: -80px; transform: translateX(-50%); opacity: 0; transition: all 0.3s;}
+
+/*흰색 박스*/
 .gnb ul.inner{width: 160px; background: #fff; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
   padding: 10px 25px; line-height: 50px; box-sizing: border-box; opacity: 0; transition: opacity 0.5s;}
+
 .gnb li:hover > a:hover:before, .gnb li > a:focus:before{opacity: 1; top:0; transition: opacity 0.5s, top 0.5s; overflow: hidden;}
 .gnb ul.inner.on{opacity: 1; line-height: 50px;}
 .gnb ul.inner a{display: block; width: 100%; height: 100%;}
@@ -46,7 +50,7 @@ transition: all 0.3s; opacity: 1;}
 /*fixHeader(스크롤 시 헤더의 높이 줄어듦)*/
 header.on .innerHeader{height: 46px; transition: all 0.4s;}
 header.on .innerHeader .title{margin-top: 14px; transition: all 0.4s;}
-header.on .innerHeader .gnb > li{height: 46px; line-height: 46px; transition: all 0.4s;}
+header.on .innerHeader .gnb > li{height: 50px; line-height: 46px; transition: all 0.4s;} /*오랜지색 컨텐츠*/
 header.on .gnb ul.inner.on {top: 46px;}
 
 
@@ -83,7 +87,7 @@ header.on .gnb ul.inner.on {top: 46px;}
 .project .videoBox .mask span:hover:after{transform: translate(-50%,-50%) scale(1); }*/
 
 /*프로젝트 소제목들*/
-.project .explanation .subtitle{margin-top: 20px; font-size: 17px;}
+.project .explanation .subtitle{margin-top: 20px; font-size: 17px; margin-left: 14px;}
 
 /*기술 스택, 소개*/
 .project .explanation .introduceProject{margin-left: 60px; display: inline-block; width: 55%;}
@@ -91,12 +95,18 @@ header.on .gnb ul.inner.on {top: 46px;}
 
 /*기술 스택 블럭화*/
 .project .explanation .introduceProject .techStack{margin-top: 10px;}
-.project .explanation .introduceProject .techStack span{margin-right: 10px; background-color:#FF9900; padding: 4px; border-radius: 6px;}
-.project .explanation .introduceProject .techStack span:nth-child(2){background-color:#3333FF;}
-.project .explanation .introduceProject .techStack span:nth-child(3){background-color:#CCCCCC;}
+.project .explanation .introduceProject .techStack span{margin-right: 10px; background-color:#FFB53C; padding: 4px; border-radius: 6px;}
+.project .explanation .introduceProject .techStack span:nth-child(2){background-color:#F3553C;}
+.project .explanation .introduceProject .techStack span:nth-child(3){background-color:#B4D8E7;}
+.project .explanation .introduceProject .techStack span:nth-child(4){background-color:#CCCCCC;}
+.project .explanation .introduceProject .techStack span:nth-child(5){background-color:#5E9EA0;}
+.project .explanation .introduceProject .techStack span:nth-child(6){background-color:#92B5D9;}
+.project .explanation .introduceProject .techStack span:nth-child(7){background-color:#CCCCCC;}
+
 
 /*프로젝트 구성(팀 or 개인)*/
 .project .explanation .introduceProject .configuration {background-color: rgba(225, 102, 100, 0.5);; padding: 4px; border-radius: 6px; margin-top: 10px; display: inline-block;} 
+.project .explanation .project3 .configuration{background-color:#CCA9DD;}  /*개인 프로젝트는 스택 색 다르게*/
 
 
 /*프로젝트 전체 설명글*/

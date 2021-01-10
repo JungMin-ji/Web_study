@@ -28,12 +28,16 @@ header{width: 100%; position: fixed; z-index: 100; background: black;}
 
 /*gnb*/
 .gnb{position: absolute; left: 50%; transform: translateX(-30%); width: 800px;}
-.gnb > li{float: left; width: 20%; height: 60px; line-height: 60px; position: relative; transition: all 0.3s;}
+.gnb > li{float: left; width: 20%; height: 56px; line-height: 60px; position: relative; transition: all 0.3s;} /*오랜지색 컨츠 높이*/
+
 .gnb > li > a{display: block; width: 100%; height: 100%; text-align: center; color: #fff; font-size: 18px; font-weight: 500; }
 .gnb > li > a:before{position:absolute; content: ''; background: orange; width: 100%; height:100%; 
 z-index: -1; left: 50%; top: -80px; transform: translateX(-50%); opacity: 0; transition: all 0.3s;}
+
+/*흰색 박스*/
 .gnb ul.inner{width: 160px; background: #fff; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
-  padding: 10px 25px; line-height: 50px; box-sizing: border-box; opacity: 0; transition: opacity 0.5s;}
+  padding: 10px 25px; line-height: 50px; box-sizing: border-box; opacity: 0; transition: opacity 0.5s; z-index: 200;}
+
 .gnb li:hover > a:hover:before, .gnb li > a:focus:before{opacity: 1; top:0; transition: opacity 0.5s, top 0.5s; overflow: hidden;}
 .gnb ul.inner.on{opacity: 1; line-height: 50px;}
 .gnb ul.inner a{display: block; width: 100%; height: 100%;}
@@ -46,13 +50,13 @@ transition: all 0.3s; opacity: 1;}
 /*fixHeader(스크롤 시 헤더의 높이 줄어듦)*/
 header.on .innerHeader{height: 46px; transition: all 0.4s;}
 header.on .innerHeader .title{margin-top: 14px; transition: all 0.4s;}
-header.on .innerHeader .gnb > li{height: 46px; line-height: 46px; transition: all 0.4s;}
+header.on .innerHeader .gnb > li{height: 50px; line-height: 46px; transition: all 0.4s;} /*오랜지색 컨텐츠*/
 header.on .gnb ul.inner.on {top: 46px;}
 
 
 
 /*자기소개 contents*/
-.contents .introduce {margin-top: 10%; margin-left: 5%;}
+.contents .introduce {margin-top: 10%; margin-left: 5%; height: 800px;}
 .contents .introduce .img{float: left; box-shadow: 0 8px 10px rgba(0, 0, 0, 0.25), 0 8px 4px rgba(0, 0, 0, 0.22);}
 .contents .introduce .text{display: inline-block; float: left; color: #555; background-color: rgba(75, 78, 85, 0.1); 
   font-size: 18px;  height: 300px; letter-spacing: -1px; line-height: 38px; padding: 20px; 
