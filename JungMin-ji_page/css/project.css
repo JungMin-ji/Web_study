@@ -54,6 +54,7 @@ header.on .innerHeader .gnb > li{height: 50px; line-height: 46px; transition: al
 header.on .gnb ul.inner.on {top: 46px;}
 
 
+
 /*프로젝트 설명*/
 .project{margin-top: 10%; margin-left: 5%;}
 
@@ -69,25 +70,55 @@ header.on .gnb ul.inner.on {top: 46px;}
 
 
 /*유튜브 영상*/
-.project .explanation .videoBox{float: left;}
-/*.project .explanation .videoBox {position: relative; width: 400px; height: 300px; border-color: green;  float: left;}*/
-/*.project .explanation .videoBox iframe {position: absolute; display: none;}
-*//*.project .videoBox .mask{width: 100%; height: 100%; position: absolute;}
-.project .videoBox .mask span{display: block; width: 100%; height: 100%; position: relative;}
-.project .videoBox .mask span img{width: 100%; transition: all 1s;}*/
+.project .explanation .videoBox{float: left; position: relative; width: 400; height: 300;}
+/*xycar 유튜브*/
+/*.project .explanation .project1 .videoBox iframe{position: absolute; display: none;}
+.project .explanation .project1 .videoBox .mask span img{transition: all 1s; }
 
+*/
 
 /*영상 호버 효과*/
-/*.project .videoBox .mask:hover img{cursor: pointer; transform: scale(1.1); transition: all 0.3s}
-.project .videoBox .mask span:before {content: ''; width: 100%; height: 100%; background: rgba(3, 3, 3, 0.4); position:absolute; left: 0; top:0; opacity: 0; transition: all 0.3s; z-index: 1;}
+/*.project .explanation .project1 .videoBox .mask:hover img{cursor: pointer; transform: scale(0.92); transition: all 0.6s}
+.project .explanation .project1 .videoBox .mask span:hover:after{transform: translate(-50%,-50%) scale(1); }
+*/
 
-.project .videoBox .mask span:after {content: ''; width: 45px;height: 45px;border:1px solid #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%) scale(0);transition: all 0.4s; transition-delay: 0.15s; z-index: 2;}
 
-.project .videoBox .mask span:hover:before {opacity: 1;}
-.project .videoBox .mask span:hover:after{transform: translate(-50%,-50%) scale(1); }*/
+/*프로젝트 이미지*/
+.project .explanation .slideBox{width: 420px; height: 320px; margin:0; position: relative; float: left;}
+.project .explanation .slideBox .slide li{margin-right: 50px;}
+.project .explanation .slideBox .slide li p.img{width: 400px; height:  300px; overflow: hidden; position: relative;}
+.project .explanation .slideBox .slide li p.img img{width: 100%; height: 100%; transition: all 2s; position: absolute;}
+.project .explanation .project5 .slideBox .slide li p.img {width: 200px; height: 320px; left: 20%;} /*안드로이드 이미지*/
+
+/*이미지 호버 효과*/
+
+
+/*이미지 화살표*/
+.slick-arrow {position: absolute; top:50%; transform: translateY(-50%); z-index: 20; background: none; width: 110px; height: 52px; border: none;}
+.slick-arrow:hover{cursor: pointer;}	 
+.slick-prev{left: -90px;}
+.slick-next {right: -78px;}
+.project .explanation .project5 .slick-prev{left: -40px;}  /*안드로이드 이미지 화살표*/
+.project .explanation .project5 .slick-next {right: 35px;}
+.slick-prev:before {left: 0; content:url(../img/prev.png);}
+.slick-next:before {right: 0; content:url(../img/next_re.png);}
+
+
+/*이미지 인디케이터*/
+.project .explanation .slideBox .slick-dots{position: absolute; bottom: -9%; left: 36%; transform: translateX(-10%); z-index: 10; text-align: center;}
+.project .explanation .slideBox .slick-dots li{width: 6px; height: 6px; float: left; margin: 0 10px;}
+.project .explanation .slideBox .slick-dots li button{width: 100%; height: 100%; background: #666; border:none; text-indent: -9999px;}
+.project .explanation .slideBox .slide .slick-dots:hover, .project .explanation .slideBox .slide .slick-dots button:hover{cursor: pointer;}
+.project .explanation .project5 .slideBox .slick-dots{left: 26%;}	/*안드로이드 이미지 인디케이터*/
+
+/*인디케이터 활성화*/
+.project .explanation .slideBox .slide .slick-dots li.slick-active button{background: orange; width: 8px; height: 8px; margin-top: -12px; transition: height 0.3s;}
+
 
 /*프로젝트 소제목들*/
-.project .explanation .subtitle{margin-top: 20px; font-size: 17px; margin-left: 14px;}
+.project .explanation .subtitle{margin-top: 40px; font-size: 17px; margin-left: 14px;}
+.project .explanation .project1 .implementationPart .subtitle{margin-top: 130px;} /*이유는 모르겠지만 xycar 구현 margin-top이 안먹혀서 따로 처리함*/
+
 
 /*기술 스택, 소개*/
 .project .explanation .introduceProject{margin-left: 60px; display: inline-block; width: 55%;}
@@ -121,16 +152,6 @@ header.on .gnb ul.inner.on {top: 46px;}
 /*저장소 링크*/
 .project .explanation .storage .subtitle{float: left; margin-top: 34px;}
 .project .explanation .storage a{display: inline-block;  margin-top: 36px; margin-left: 20px; text-decoration: underline;}
-
-
-
-
-
-
-
-
-
-
 
 
 /*fotter*/
