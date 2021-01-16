@@ -24,26 +24,26 @@ body{font-family: 'Roboto', sans-serif; font-size: 14px; background: #eee;}
 /*header*/
 header{width: 100%; position: fixed; z-index: 100; background: black;}
 .innerHeader{padding: 0 60px; height: 36px; transition: all 0.3s;}
-.innerHeader .title{width: 200px; height: 36px; float: left; margin-top: 20px; transition: all 0.3s; color: white; position: relative; }
+.innerHeader .title{width: 50px; height: 36px; float: left; margin-top: 20px; transition: all 0.3s; color: white; position: relative; 
+  font-size: 26px; line-height:20px;}
 
 /*gnb*/
 .gnb{position: absolute; left: 50%; transform: translateX(-30%); width: 800px;}
-.gnb > li{float: left; width: 20%; height: 56px; line-height: 60px; position: relative; transition: all 0.3s;} /*오랜지색 컨츠 높이*/
-
+.gnb > li{float: left; width: 20%; height: 56px; line-height: 60px; position: relative; transition: all 0.3s;} /*오랜지색 컨텐츠 높이*/
 .gnb > li > a{display: block; width: 100%; height: 100%; text-align: center; color: #fff; font-size: 18px; font-weight: 500; }
 .gnb > li > a:before{position:absolute; content: ''; background: orange; width: 100%; height:100%; 
 z-index: -1; left: 50%; top: -80px; transform: translateX(-50%); opacity: 0; transition: all 0.3s;}
+.gnb li:hover > a:hover:before, .gnb li > a:focus:before{opacity: 1; top:0; transition: opacity 0.5s, top 0.5s; overflow: hidden;}
 
 /*흰색 박스*/
 .gnb ul.inner{width: 160px; background: #fff; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
-  padding: 10px 25px; line-height: 50px; box-sizing: border-box; opacity: 0; transition: opacity 0.5s;}
-
-.gnb li:hover > a:hover:before, .gnb li > a:focus:before{opacity: 1; top:0; transition: opacity 0.5s, top 0.5s; overflow: hidden;}
-.gnb ul.inner.on{opacity: 1; line-height: 50px;}
+  padding: 10px 25px; line-height: 40px; box-sizing: border-box; opacity: 0; transition: opacity 0.5s; z-index: 200;}
+.gnb ul.inner.on{opacity: 0.9; line-height: 40px;}
 .gnb ul.inner a{display: block; width: 100%; height: 100%;}
-.gnb ul.inner a span{display: inline-block; position: relative;}
-.gnb ul.inner a span:after{content: ''; width: 0; height: 2px; background: orange; position: absolute; left: 0; bottom: 8px; 
-transition: all 0.3s; opacity: 1;}
+.gnb ul.inner a span{display: inline-block; position: relative; font-size: 16px;}
+/*.gnb ul.inner a span:after{content: ''; width: 0; height: 2px; background: orange; position: absolute; left: 0; bottom: 8px; 
+transition: all 0.3s; opacity: 1;}*/
+.gnb ul.inner a span:hover{color: #444; opacity: 0.8;}
 .gnb ul.inner a:hover span:after, .gnb ul.inner a:focus span:after{width: 100%; padding-right: 10px;}
 
 
@@ -52,7 +52,6 @@ header.on .innerHeader{height: 46px; transition: all 0.4s;}
 header.on .innerHeader .title{margin-top: 14px; transition: all 0.4s;}
 header.on .innerHeader .gnb > li{height: 50px; line-height: 46px; transition: all 0.4s;} /*오랜지색 컨텐츠*/
 header.on .gnb ul.inner.on {top: 46px;}
-
 
 
 /*프로젝트 설명*/
@@ -156,5 +155,6 @@ header.on .gnb ul.inner.on {top: 46px;}
 
 /*fotter*/
 footer{background: #191a1a; padding: 30px 20px; color: #666; margin-top: 100px;}
-footer ul{margin-bottom: 10px; overflow: hidden; }
+footer ul{margin-bottom: 10px; overflow: hidden; margin-left: 20px;}
 footer ul li {float: left; margin-right: 20px;}
+footer p{margin-left: 20px;}
