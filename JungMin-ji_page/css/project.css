@@ -37,7 +37,7 @@ z-index: -1; left: 50%; top: -80px; transform: translateX(-50%); opacity: 0; tra
 
 /*흰색 박스*/
 .gnb ul.inner{width: 160px; background: #fff; box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
-  padding: 10px 25px; line-height: 40px; box-sizing: border-box; opacity: 0; transition: opacity 0.5s; z-index: 200; pointer-events: none;}
+  padding: 10px 25px; line-height: 40px; box-sizing: border-box; opacity: 0; transition: opacity 0.5s; pointer-events: none;}
 .gnb ul.inner.on{opacity: 0.9; line-height: 40px; pointer-events: auto;}
 .gnb ul.inner a{display: block; width: 100%; height: 100%;}
 .gnb ul.inner a span{display: inline-block; position: relative; font-size: 16px;}
@@ -94,13 +94,13 @@ header.on .gnb ul.inner.on {top: 46px;}
 
 /*이미지 화살표*/
 .slick-arrow {position: absolute; top:50%; transform: translateY(-50%); z-index: 20; background: none; width: 110px; height: 52px; border: none;}
-.slick-arrow:hover{cursor: pointer;}	 
+.slick-arrow:hover{cursor: pointer; opacity: 0.7;}	 
 .slick-prev{left: -90px;}
-.slick-next {right: -78px;}
-.project .explanation .project5 .slick-prev{left: -40px;}  /*안드로이드 이미지 화살표*/
+.slick-next {right: -71px;}
+.project .explanation .project5 .slick-prev{left: -35px;}  /*안드로이드 이미지 화살표*/
 .project .explanation .project5 .slick-next {right: 35px;}
 .slick-prev:before {left: 0; content:url(../img/prev.png);}
-.slick-next:before {right: 0; content:url(../img/next_re.png);}
+.slick-next:before {right: 0; content:url(../img/next.png);}
 
 
 /*이미지 인디케이터*/
@@ -116,7 +116,6 @@ header.on .gnb ul.inner.on {top: 46px;}
 
 /*프로젝트 소제목들*/
 .project .explanation .subtitle{margin-top: 40px; font-size: 17px; margin-left: 14px;}
-.project .explanation .project1 .implementationPart .subtitle{margin-top: 130px;} /*이유는 모르겠지만 xycar 구현 margin-top이 안먹혀서 따로 처리함*/
 
 
 /*기술 스택, 소개*/
@@ -146,6 +145,7 @@ header.on .gnb ul.inner.on {top: 46px;}
 
 /*구현*/
 .project .explanation .implementationPart{clear: both; margin-top: 80px;}  /*clear:both 속성 : div가 아래로 글자가 줄바꿈 되기를 원할 때*/
+.project .explanation .project1 .implementationPart .subtitle{margin-top: 80px;} /*이유는 모르겠지만 xycar 구현 margin-top이 안먹혀서 따로 처리함*/
 
 
 /*저장소 링크*/
