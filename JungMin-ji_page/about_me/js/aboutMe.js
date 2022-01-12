@@ -32,4 +32,4 @@ function fixHeader(){
 	}
 }
 
-$('.parallax-window').parallax({imageSrc: 'img/student.jpg'});
+$('.parallax-window').parallax({imageSrc: '../img/student.jpg'});

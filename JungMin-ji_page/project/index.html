@@ -3,10 +3,10 @@
 <head lang="ko">
 	<title>jung min-ji's page</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-   <link rel="stylesheet" type="text/css" href="css/slick.css">
-   <script src="js/jquery-3.3.1.min.js"></script>
-   <script src="js/splitting.min.js"></script>
-   <script src="js/slick.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="../css/slick.css">
+   <script src="../js/jquery-3.3.1.min.js"></script>
+   <script src="../js/splitting.min.js"></script>
+   <script src="../js/slick.min.js"></script>
 	<script src="js/project.js"></script>
 
 </head>
@@ -44,18 +44,109 @@
    <!-- visual(contents 상단 코딩 이미지&이름) -->
    <section class="project">
    	<ul class="explanation">
+
+         <!-- 귀농메이트 -->
+         <li> 
+            <div class="project7">
+               <h1 class="title">귀농메이트</h1>
+               <div class="slideBox">
+                <ul class="slide">
+                  <li><p class="img"><span><img src="../img/project7_1.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project7_2.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project7_3.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project7_4.png"></span></p></li>
+                </ul>
+               </div>
+               
+               <div class="introduceProject">
+                  <div class="introduce1">
+                    <div class="wrap-star"><h1 class="rating">난이도</h1><span class="start-rating"><span style="width: 60%"></span></span></div>
+                     <h1 class="subtitle">기술 스택</h1>
+                     <div class="techStack"><span id="stack">Android</span><span id="stack">Python</span>
+                     <span id="stack">Firestore</span><span id="stack">GitHub</span><span id="stack">Figma</span></div>
+                     
+                  </div>
+                  
+                  <div class="introduce2">
+                     <h1 class="subtitle">소개</h1> <span class="configuration">팀 프로젝트</span>
+                     <div class="text">귀농과 귀촌 지역을 추천해주고 해당 지역 소개와 특산품, 문화, 농촌 체험을 제공하는 앱서비스입니다.
+                     </div> 
+                  </div>
+               </div>
+
+               <div class="implementationPart">
+                  <h1 class="subtitle">구현</h1>
+                   <div class="text" >
+                     - figma와 zeplin을 통한 디자인<br>
+                     - firebase authentication 사용하여 회원가입 및 로그인 구현<br>
+                     - 사용자 맞춤 서비스 제공 위한 취향 분석-open api 이용해서 키워드 추출<br>
+                     - 회원, 지역 데이터 firebase cloud firestore에 저장<br>
+                     - 지역 추천 알고리즘 구현 - user-user collaborative filtering<br>
+                     - 파이썬 서버와의 소켓통신<br>
+                     현재 개발 중인 프로젝트입니다!
+                  </div>
+               </div>
+
+               <div class="storage"><h1 class="subtitle">저장소 링크</h1><a href="https://github.com/mjjunng/Return-to-farming-mate">https://github.com/mjjunng/Return-to-farming-mate</a></div>     
+            </div>
+         </li>
+
+         <!-- coview -->
+         <li> 
+            <div class="project6">
+               <h1 class="title">COVIEW</h1>
+               <div class="slideBox">
+                <ul class="slide">
+                  <li><p class="img"><span><img src="../img/project6_1.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project6_2.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project6_3.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project6_4.png"></span></p></li>
+                </ul>
+               </div>
+               
+               <div class="introduceProject">
+                  <div class="introduce1">
+                    <div class="wrap-star"><h1 class="rating">난이도</h1><span class="start-rating"><span style="width: 60%"></span></span></div>
+                     <h1 class="subtitle">기술 스택</h1>
+                     <div class="techStack"><span id="stack">Spring Boot</span><span id="stack">Spring Security</span>
+                     <span id="stack">JPA</span><span id="stack">Thymeleaf</span><span id="stack">WebRTC</span></div>
+                     
+                  </div>
+                  
+                  <div class="introduce2">
+                     <h1 class="subtitle">소개</h1> <span class="configuration">개인 프로젝트</span>
+                     <div class="text">사용자와 회의 참여자의 화면을 동시에 공유할 수 있는 1:1 온라인 화상 회의 플랫폼입니다.
+                     </div> 
+                  </div>
+               </div>
+
+               <div class="implementationPart">
+                  <h1 class="subtitle">구현</h1>
+                   <div class="text">
+                     - spring security를 이용한 회원가입, 로그인 구현<br>
+                     - jpa를 통한 데이터 관리<br>
+                     - bootstrap과 thymeleaf를 이용한 템플릿 구성<br>
+                     - webrtc를 이용하여 비디오, 스크린 공유 개발<br>
+                     이 프로젝트를 통해 mvc 패턴을 이해할 수 있었고, 테스트 케이스 작성의 중요성을 알게 되었습니다.
+                  </div>
+               </div>
+
+               <div class="storage"><h1 class="subtitle">저장소 링크</h1><a href="https://github.com/mjjunng/coview">https://github.com/mjjunng/coview</a></div>     
+            </div>
+         </li>
+
          <!-- New facts -->
          <li> 
             <div class="project5">
                <h1 class="title">New Facts</h1>
                <div class="slideBox">
                 <ul class="slide">
-                  <li><p class="img"><span><img src="img/project5_1.png"></span></p></li>
-                  <li><p class="img"><span><img src="img/project5_2.png"></span></p></li>
-                  <li><p class="img"><span><img src="img/project5_3.png"></span></p></li>
-                  <li><p class="img"><span><img src="img/project5_4.png"></span></p></li>
-                  <li><p class="img"><span><img src="img/project5_5.png"></span></p></li>
-                  <li><p class="img"><span><img src="img/project5_6.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project5_1.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project5_2.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project5_3.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project5_4.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project5_5.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project5_6.png"></span></p></li>
                 </ul>
                </div>
                
@@ -105,8 +196,8 @@
                <h1 class="title">Snake Game</h1>
                <div class="slideBox">
                 <ul class="slide">
-                  <li><p class="img"><span><img src="img/project4_1.png"></span></p></li>
-                  <li><p class="img"><span><img src="img/project4_2.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project4_1.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project4_2.png"></span></p></li>
                 </ul>
                </div>
                
@@ -150,11 +241,11 @@
                <h1 class="title">강아지 찾기 게임</h1>
                <div class="slideBox">
                 <ul class="slide">
-                  <li><p class="img"><span><img src="img/project3_1.png"></span></p></li>
-                  <li><p class="img"><span><img src="img/project3_2.png"></span></p></li>
-                  <li><p class="img"><span><img src="img/project3_3.png"></span></p></li>
-                  <li><p class="img"><span><img src="img/project3_4.png"></span></p></li>
-                  <li><p class="img"><span><img src="img/project3_5.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project3_1.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project3_2.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project3_3.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project3_4.png"></span></p></li>
+                  <li><p class="img"><span><img src="../img/project3_5.png"></span></p></li>
                 </ul>
                </div>
                

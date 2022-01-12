@@ -66,6 +66,8 @@ header.on .gnb ul.inner.on {top: 46px;}
 .project .explanation li:nth-child(3) .title:before{content:'03';}  
 .project .explanation li:nth-child(4) .title:before{content:'04';}  
 .project .explanation li:nth-child(5) .title:before{content:'05';}  
+.project .explanation li:nth-child(6) .title:before{content:'06';}  
+.project .explanation li:nth-child(7) .title:before{content:'07';}  
 
 
 /*유튜브 영상*/
@@ -88,6 +90,7 @@ header.on .gnb ul.inner.on {top: 46px;}
 .project .explanation .slideBox .slide li p.img{width: 400px; height:  300px; overflow: hidden; position: relative;}
 .project .explanation .slideBox .slide li p.img img{width: 100%; height: 100%; transition: all 2s; position: absolute;}
 .project .explanation .project5 .slideBox .slide li p.img {width: 200px; height: 320px; left: 20%;} /*안드로이드 이미지*/
+.project .explanation .project7 .slideBox .slide li p.img {width: 200px; height: 320px; left: 20%;} /*안드로이드 이미지2(귀농메이트)*/
 
 /*이미지 호버 효과*/
 
@@ -99,6 +102,8 @@ header.on .gnb ul.inner.on {top: 46px;}
 .slick-next {right: -71px;}
 .project .explanation .project5 .slick-prev{left: -35px;}  /*안드로이드 이미지 화살표*/
 .project .explanation .project5 .slick-next {right: 35px;}
+.project .explanation .project7 .slick-prev{left: -35px;}  /*안드로이드 이미지 화살표*/
+.project .explanation .project7 .slick-next {right: 35px;}
 .slick-prev:before {left: 0; content:url(../img/prev.png);}
 .slick-next:before {right: 0; content:url(../img/next.png);}
 
@@ -109,6 +114,7 @@ header.on .gnb ul.inner.on {top: 46px;}
 .project .explanation .slideBox .slick-dots li button{width: 100%; height: 100%; background: #666; border:none; text-indent: -9999px;}
 .project .explanation .slideBox .slide .slick-dots:hover, .project .explanation .slideBox .slide .slick-dots button:hover{cursor: pointer;}
 .project .explanation .project5 .slideBox .slick-dots{left: 26%;}	/*안드로이드 이미지 인디케이터*/
+.project .explanation .project7 .slideBox .slick-dots{left: 30%;} /*안드로이드 이미지(귀농메이트) 인디케이터*/
 
 /*인디케이터 활성화*/
 .project .explanation .slideBox .slide .slick-dots li.slick-active button{background: orange; width: 8px; height: 8px; margin-top: -12px; transition: height 0.3s;}
